@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proxy Market
 
-## Getting Started
+Site web pour **Proxy Market**, votre commerce de proximité à Étang Saint-Leu, 97436 La Réunion.
 
-First, run the development server:
+Découvrez nos produits locaux : pizzas artisanales Augusto, glaces à l'italienne, pains bouchons et bien plus.
 
+## Technologies utilisées
+
+- **Next.js 15** : Framework React pour le rendu côté serveur et statique.
+- **Tailwind CSS v4** : Framework CSS utilitaire pour le styling.
+- **next-themes** : Gestion des thèmes sombre/clair.
+- **shadcn/ui** : Composants UI réutilisables (Button, Sheet).
+- **Lucide React** : Icônes modernes.
+- **ESLint** : Linting du code.
+
+## Installation
+
+1. Clonez le repository :
+   ```bash
+   git clone https://github.com/chniak97436/proxy-market.git
+   cd proxy-market
+   ```
+
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+
+## Utilisation
+
+### Développement
+Lancez le serveur de développement :
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000).
+
+### Build
+Pour construire l'application pour la production :
+```bash
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Linting
+Vérifiez le code avec ESLint :
+```bash
+npm run lint
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Structure du projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` : Pages et layout Next.js App Router.
+  - `layout.js` : Layout principal avec ThemeProvider, NavBar et Footer.
+  - `page.js` : Page d'accueil.
+  - `about/page.js` : Page À propos.
+  - `contact/page.js` : Page Contact.
+- `components/` : Composants réutilisables.
+  - `NavBar.jsx` : Barre de navigation responsive avec thème et menu hamburger.
+  - `Footer.jsx` : Pied de page avec liens et informations de contact.
+  - `ui/` : Composants shadcn/ui (button, sheet).
+- `lib/` : Utilitaires.
+- `public/` : Images et fichiers statiques.
 
-## Learn More
+## Fonctionnalités
 
-To learn more about Next.js, take a look at the following resources:
+- **Navigation responsive** : Menu hamburger sur mobile, navigation classique sur desktop.
+- **Thème sombre/clair** : Bascule entre les modes avec icônes Soleil/Lune.
+- **Design responsive** : Optimisé de l'iPhone 5 au desktop.
+- **SEO** : Métadonnées optimisées pour les moteurs de recherche.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Déploiement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Le site peut être déployé sur **Vercel** (recommandé pour Next.js) ou tout autre plateforme supportant Node.js.
 
-## Deploy on Vercel
+Pour Vercel :
+1. Importez le repository GitHub.
+2. Déployez automatiquement.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Auteur
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Créé par chniak97436.
+
+## Licence
+
+Tous droits réservés © 2024 Proxy Market.
