@@ -2,6 +2,14 @@
 
 ## Tâches prioritaires
 
+### 0. Intégration Facebook
+- [x] Installer axios et créer la structure de base (page Social, composant FacebookPosts, lien dans NavBar).
+- [x] Créer le fichier .env.local.example pour les variables d'environnement Facebook.
+- [ ] Configurer l'app Facebook et obtenir les tokens (suivre FACEBOOK_INTEGRATION.md).
+- [ ] Implémenter le code dans FacebookPosts.jsx pour récupérer et afficher les posts.
+- [ ] Ajouter la gestion des commentaires si nécessaire.
+- [ ] Tester l'intégration et gérer la sécurité des tokens.
+
 ### 1. Contenu des pages
 - [ ] Remplir la page À propos (`app/about/page.js`) avec l'histoire du commerce, mission, équipe.
 - [ ] Compléter la page Contact (`app/contact/page.js`) avec formulaire de contact, carte Google Maps, horaires d'ouverture.

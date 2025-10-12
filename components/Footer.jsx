@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          © 2024 Proxy Market. Tous droits réservés.
+          © 2025 Proxy Market. Tous droits réservés.
         </div>
       </div>
     </footer>
