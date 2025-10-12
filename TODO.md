@@ -10,6 +10,17 @@
 - [ ] Ajouter la gestion des commentaires si nécessaire.
 - [ ] Tester l'intégration et gérer la sécurité des tokens.
 
+### 0.5. Mise à jour NavBar
+- [x] Supprimer l'onglet "Accueil" de la NavBar.
+- [x] Rendre le logo cliquable vers la page d'accueil (/).
+- [x] Utiliser Link de Next.js pour la navigation au lieu de <a>.
+- [x] Ajouter la police Roboto extrabold aux liens de navigation.
+- [x] Ajuster la taille responsive du logo (mobile/tablette/desktop).
+- [x] Supprimer le code du mode sombre (useTheme, boutons, etc.).
+- [x] Simplifier le composant en supprimant les états inutiles et composants non utilisés.
+- [x] Corriger la configuration cross-origin dans next.config.mjs.
+- [x] Auditer les performances avec Lighthouse (Performance: 73/100, LCP: 3.2s, FCP: 0.8s, Speed Index: 1.6s, CLS: faible, TBT: faible; Accessibilité: 100/100, Bonnes pratiques: 100/100, SEO: 100/100).
+
 ### 1. Contenu des pages
 - [ ] Remplir la page À propos (`app/about/page.js`) avec l'histoire du commerce, mission, équipe.
 - [ ] Compléter la page Contact (`app/contact/page.js`) avec formulaire de contact, carte Google Maps, horaires d'ouverture.
@@ -34,9 +45,11 @@
 
 ### 5. Tests et déploiement
 - [ ] Tester la responsivité sur différents appareils (iPhone 5, iPad, desktop).
-- [ ] Vérifier l'accessibilité (contraste, navigation au clavier).
+- [ ] Vérifier l'accessibilité (contraste, navigation au clavier, alt text des images).
+- [ ] Tester les performances (Lighthouse, Core Web Vitals).
 - [ ] Déployer sur Vercel ou Netlify.
 - [ ] Configurer un domaine personnalisé si nécessaire.
+- [ ] Mettre en place le monitoring des erreurs (Sentry ou similaire).
 
 ### 6. Fonctionnalités avancées (optionnelles)
 - [ ] Ajouter un système de réservation en ligne pour les pizzas.
