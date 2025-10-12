@@ -1,6 +1,6 @@
-# Proxy Market
+# proxi Market
 
-Site web pour **Proxy Market**, votre commerce de proximité à Étang Saint-Leu, 97436 La Réunion.
+Site web pour **proxi Market**, votre commerce de proximité à Étang Saint-Leu, 97436 La Réunion.
 
 Découvrez nos produits locaux : pizzas artisanales Augusto, glaces à l'italienne, pains bouchons et bien plus.
 
@@ -17,8 +17,8 @@ Découvrez nos produits locaux : pizzas artisanales Augusto, glaces à l'italien
 
 1. Clonez le repository :
    ```bash
-   git clone https://github.com/chniak97436/proxy-market.git
-   cd proxy-market
+   git clone https://github.com/chniak97436/proxi-market.git
+   cd proxi-market
    ```
 
 2. Installez les dépendances :
@@ -82,4 +82,4 @@ Créé par chniak97436.
 
 ## Licence
 
-Tous droits réservés © 2024 Proxy Market.
+Tous droits réservés © 2024 proxi Market.

@@ -11,7 +11,7 @@ Ce guide détaille comment intégrer l'API Facebook Graph pour afficher les post
 ### 2. Créer une Application Facebook
 1. Allez dans "My Apps" > "Create App".
 2. Choisissez "Consumer" ou "Business" selon votre usage.
-3. Donnez un nom à votre app (ex: "Proxy Market Website").
+3. Donnez un nom à votre app (ex: "proxi Market Website").
 4. Notez l'**App ID** (visible dans les paramètres de l'app).
 
 ### 3. Obtenir un Access Token

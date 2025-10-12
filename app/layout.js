@@ -12,13 +12,13 @@ const ds = Dancing_Script({
 
 const roboto = Roboto({
   variable: "--font-roboto",
-  weight: ["400","600","900"],
+  weight: ["400","600","700","800","900"],
   subsets: ["latin"],
 });
 
 export const metadata = {
-  title: "Proxy Market",
-  description: "Découvrez Proxy Market à l'Étang Saint-Leu : pizzas artisanales Augusto, glaces à l'italienne, pains bouchons et produits locaux frais. Commerce de proximité à l'Étang Saint-Leu 97436.",
+  title: "proxi Market",
+  description: "Découvrez proxi Market à l'Étang Saint-Leu : pizzas artisanales Augusto, glaces à l'italienne, pains bouchons et produits locaux frais. Commerce de proximité à l'Étang Saint-Leu 97436.",
 };
 
 export default function RootLayout({ children }) {

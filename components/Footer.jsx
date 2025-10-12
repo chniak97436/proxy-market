@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">Proxy Market</h3>
+            <h3 className="font-bold text-lg mb-4">proxi Market</h3>
             <p className="text-sm text-muted-foreground">
               Votre commerce de proximité à Étang Saint-Leu, 97436 La Réunion.
             </p>
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          © 2025 Proxy Market. Tous droits réservés.
+          © 2025 proxi Market. Tous droits réservés.
         </div>
       </div>
     </footer>
