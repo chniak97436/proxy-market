@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const ds = Dancing_Script({
   variable: "--font-dancing-script",
-  weight: ["500","700","900"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
