@@ -2,6 +2,7 @@ import { Dancing_Script, Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { MenuProvider } from "../components/MenuContext";
 
 const ds = Dancing_Script({
   variable: "--font-dancing-script",
@@ -16,19 +17,21 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "proxi Market",
-  description: "Découvrez proxi Market à l'Étang Saint-Leu : pizzas artisanales Augusto, glaces à l'italienne, pains bouchons et produits locaux frais. Commerce de proximité à l'Étang Saint-Leu 97436.",
+  title: "Proxi Étang Saint-Leu",
+  description: "Découvrez proxi à Étang Saint-Leu: pizzas artisanales Augusto, glaces à l'italienne, pains bouchons et produits locaux frais. Commerce de proximité à Étang Saint-Leu 97436.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning={true}>
       <body
-        className={`${ds.variable} ${roboto.variable} antialiased`}
+        className={`${ds.variable} ${roboto.variable} antialiased bvert`}
       >
-        <NavBar />
-        <main>{children}</main>
-        <Footer />
+        <MenuProvider>
+          <NavBar />
+          <main className="duration-300 transition-filter">{children}</main>
+          <Footer />
+        </MenuProvider>
       </body>
     </html>
   );

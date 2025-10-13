@@ -71,7 +71,7 @@ npm run lint
 
 ## Fonctionnalités
 
-- **Navigation responsive** : Menu hamburger sur mobile, navigation classique sur desktop.
+- **Navigation responsive** : Menu hamburger sur mobile avec effet de flou sur le background, navigation classique sur desktop.
 - **Logo cliquable** : Le logo redirige vers la page d'accueil.
 - **Police Roboto** : Utilisation de la police Roboto extrabold pour les liens de navigation.
 - **Design responsive** : Optimisé de l'iPhone 5 au desktop.
@@ -79,6 +79,7 @@ npm run lint
 - **Performances** : Score Lighthouse de 73/100 (LCP: 3.2s, FCP: 0.8s, Speed Index: 1.6s, CLS faible, TBT faible).
 - **Accessibilité** : Score Lighthouse de 100/100.
 - **Bonnes pratiques** : Score Lighthouse de 100/100.
+- **Documents légaux** : PDFs des mentions légales, CGU et plan du site générés automatiquement.
 
 ## Déploiement
 

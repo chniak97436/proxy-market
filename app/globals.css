@@ -24,6 +24,11 @@
   background-color: #801c54; /* Couleur fond violet - à remplacer */
 }
 
+.blur-background main, .blur-background footer {
+  filter: blur(4px);
+  transition: filter 0.4s ease ease-in-out;
+}
+
 
 
 
