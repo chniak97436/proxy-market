@@ -1,5 +1,4 @@
 import { Dancing_Script, Roboto } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
@@ -27,16 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${ds.variable} ${roboto.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <NavBar />
-          <main>{children}</main>
-          <Footer />
-        </ThemeProvider>
+        <NavBar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
