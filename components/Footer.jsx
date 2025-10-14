@@ -1,12 +1,22 @@
+import Image from "next/image";
+
+
+
 export default function Footer() {
   return (
-    <footer className="text-white border-t bviolet">
-      <div className="container px-4 py-8 mx-auto">
+    <footer className="text-white bg-[radial-gradient(circle_at_bottom,_#801c54_0%,_#801c54_90%,_#b0ca0b_100%)] border-t border-t-[#b0ca0b]">
+      <div className="container px-5 py-1 mx-auto">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div>
-            <h3 className="mb-4 text-lg font-bold">proxi Market</h3>
+          <div className="flex flex-col items-start">            
+            <Image
+              src="/images/logo/Logo-proxi.png"
+              alt="proxi market étang st Leu 97436"
+              width={80}
+              height={60}
+              className="object-contain"
+            />
             <p className="text-sm text-muted-foreground">
-              Votre commerce de proximité à Étang Saint-Leu, 97436 La Réunion.
+              Votre commerce de proximité à Étang Saint-Leu.
             </p>
           </div>
           <div>
@@ -26,7 +36,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="pt-8 mt-8 text-sm text-center border-t text-muted-foreground">
+        <div className="pt-8 mt-8 text-sm text-center border-t border-t-[#b0ca0b] text-muted-foreground">
           © 2025 proxi Market. Tous droits réservés.
         </div>
       </div>

@@ -19,13 +19,19 @@ const roboto = Roboto({
 export const metadata = {
   title: "Proxi Étang Saint-Leu",
   description: "Découvrez proxi à Étang Saint-Leu: pizzas artisanales Augusto, glaces à l'italienne, pains bouchons et produits locaux frais. Commerce de proximité à Étang Saint-Leu 97436.",
+  icons: {
+    icon: [
+      { url: '/images/logo/Logo-proxi.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/logo/Logo-proxi.png', sizes: '16x16', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning={true}>
       <body
-        className={`${ds.variable} ${roboto.variable} antialiased bvert`}
+        className={`${ds.variable} ${roboto.variable} antialiased bg-[#50022e]`}
       >
         <MenuProvider>
           <NavBar />
