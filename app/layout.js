@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning={true}>
       <body
-        className={`${ds.variable} ${roboto.variable} antialiased bg-[#50022e]`}
+        className={`${ds.variable} ${roboto.variable} antialiased `}
       >
         <MenuProvider>
           <NavBar />

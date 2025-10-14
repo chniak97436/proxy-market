@@ -75,6 +75,7 @@ npm run lint
 - **Logo cliquable** : Le logo redirige vers la page d'accueil.
 - **Police Roboto** : Utilisation de la police Roboto extrabold pour les liens de navigation.
 - **Design responsive** : Optimisé de l'iPhone 5 au desktop.
+- **Pizzas interactives** : Section pizzas avec effet hover (changement d'image et zoom) pour une expérience utilisateur améliorée.
 - **SEO** : Métadonnées optimisées pour les moteurs de recherche.
 - **Performances** : Score Lighthouse de 73/100 (LCP: 3.2s, FCP: 0.8s, Speed Index: 1.6s, CLS faible, TBT faible).
 - **Accessibilité** : Score Lighthouse de 100/100.
