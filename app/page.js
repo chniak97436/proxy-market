@@ -10,11 +10,11 @@ export default function Home() {
         width={1920}
         height={1080}
         priority/>
-      <div className=" p-6 mx-auto m-10 shadow-lg bviolet border border-[#b0ca0b]">
+      <div className=" p-6 mx-auto mb-6 shadow-lg bviolet border border-[#b0ca0b]">
         <h1 className="mb-4 text-2xl font-bold text-center text-white md:text-2xl lg:text-3xl">Bienvenue chez proxi Étang Saint-Leu</h1>
         <p className="mb-8 text-sm text-center text-white md:text-base lg:text-lg">Découvrez nos pizzas artisanales Augusto, glaces à l'italienne, pains bouchons et produits locaux.</p>
       </div>
-      <div className="w-full p-6 mx-auto m-10 shadow-lg bviolet border border-[#b0ca0b]">
+      <div className="w-full p-6 mx-auto m-0 shadow-lg bviolet border border-[#b0ca0b]">
         <h2 className="mb-4 text-xl font-bold text-center text-white md:text-2xl lg:text-3xl">Nos Spécialités</h2>
       </div>
       <Pizza/>
