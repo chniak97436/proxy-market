@@ -3,12 +3,12 @@ import Image from "next/image";
 export default  function Pizza() {
     const pizza = [
         {nom :"MARGHERITA",src:"/images/pizza/Margherita.jpg",alt:"Pizza Augusto Margherita",width:600,height:612},
-        {nom :"REINE",src:"/images/pizza/Reine.jpg",alt:"Pizza Augusto Reine",width:600,height:612},
+        {nom :"REINE",src:"/images/pizza/reine.jpg",alt:"Pizza Augusto Reine",width:600,height:612},
         {nom :"3 FROMAGES",src:"/images/pizza/3-fromages.jpg",alt:"Pizza Augusto 3 Fromages",width:600,height:612},
     ]
     const pizzaHover = [
     {nom :"MARGHERITA",src:"/images/pizza-hover/margherita.jpg",alt:"Pizza Augusto Margherita",width:600,height:612},
-        {nom :"REINE",src:"/images/pizza-hover/Reine.jpg",alt:"Pizza Augusto Reine",width:600,height:612},
+        {nom :"REINE",src:"/images/pizza-hover/reine.jpg",alt:"Pizza Augusto Reine",width:600,height:612},
         {nom :"3 FROMAGES",src:"/images/pizza-hover/3-fromages.jpg",alt:"Pizza Augusto 3 Fromages",width:600,height:612},
   ];
   return (
