@@ -17,10 +17,10 @@ export default function Pizza() {
       <Image width="208" height="104" className="pt-8 mx-auto" src="https://augusto-pizza.fr/wp-content/themes/augustoTheme/img/logo-augusto-white.svg" alt="Logo augusto" />
       <div className="w-[100%] text-center mb-6 mx-auto">
         <p className="text-sm text-white">BIEN PLUS QU'UNE PIZZA</p>
-        <div className="flex flex-row justify-center w-[18%] mx-auto mt-2 ">
-          <span className="bg-blue-900 w-[6%] h-1.5"></span>
-          <span className="bg-white w-[6%] h-1.5"></span>
-          <span className="bg-red-600 w-[6%] h-1.5"></span>
+        <div className="flex flex-row justify-center w-full mx-auto mt-2 ">
+          <span className="bg-blue-900 w-[7%] h-1 md:w-[2%] md:h-1.5"></span>
+          <span className="bg-white w-[7%] h-1 md:w-[2%] md:h-1.5"></span>
+          <span className="bg-red-600 w-[7%] h-1 md:w-[2%] md:h-1.5"></span>
         </div>
         <div className="m-2 mx-auto overflow-hidden rounded-full w-52 h-52">
           <Image width="208" height="208" className="object-cover object-[120%_100%] w-full h-full" src="https://augusto-pizza.fr/wp-content/uploads/2025/02/nos-pizzas-savoureuses.jpg" alt="augusto" />
