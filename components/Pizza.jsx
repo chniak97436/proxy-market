@@ -15,7 +15,7 @@ export default function Pizza() {
   ];
   const signatures = [
     { nom: "MONTAGNARDE", src: "/images/pizza/montargnarde.jpg", alt: "Pizza Augusto montagnarde", description: "Pâte artisanale, creme faiche, jambon cru, raclette,champignons et basilic.", width: 600, height: 612 },
-    { nom: "ALLLL POLLO", src: "/images/pizza/all-Pollo.jpg", alt: "Pizza Augusto all pollo", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, émincés de poulet roti°, oignons rouge, sauce BBQ et basilic.", width: 600, height: 612, halal:isHalal },
+    { nom: "ALL POLLO", src: "/images/pizza/all-Pollo.jpg", alt: "Pizza Augusto all pollo", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, émincés de poulet roti°, oignons rouge, sauce BBQ et basilic.", width: 600, height: 612, halal: isHalal },
     { nom: "FERMIERE", src: "/images/pizza/fermiere.jpg", alt: "Pizza Augusto fermiere", description: "Pâte artisanale, creme faiche, mozzarella, émincés de poulet, champignons, oignons et basilic.", width: 600, height: 612 },
   ];
   const signaturesHover = [
@@ -76,6 +76,23 @@ export default function Pizza() {
               <span className="text-xs">{item.halal}</span>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="flex flex-row items-center w-screen mt-6 mb-10 -mx-10 ">
+        <div className=" text-white border-t border-b border-r w-[40%] borde-white">
+          <p className="flex justify-start my-2 ml-1 text-[50%] font-semibold md:text-lg">PRÉTE EN 2 MIN</p>
+        </div>
+        <div className="items-center text-white border-t border-b w-[60%] borde-white">
+          <p className="flex justify-end my-2 mr-1 text-[50%] font-semibold md:text-lg">PIZZA ARTISANALES CUITES SUR PLACE</p>
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
         </div>
       </div>
     </div>
