@@ -15,7 +15,7 @@ export default function Pizza() {
   ];
   const signatures = [
     { nom: "MONTAGNARDE", src: "/images/pizza/montargnarde.jpg", alt: "Pizza Augusto montagnarde", description: "Pâte artisanale, creme faiche, jambon cru, raclette,champignons et basilic.", width: 600, height: 612 },
-    { nom: "ALLLL POLLO", src: "/images/pizza/all-pollo.jpg", alt: "Pizza Augusto all pollo", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, émincés de poulet roti°, oignons rouge, sauce BBQ et basilic.", width: 600, height: 612, halal:isHalal },
+    { nom: "ALLLL POLLO", src: "/images/pizza/all-Pollo.jpg", alt: "Pizza Augusto all pollo", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, émincés de poulet roti°, oignons rouge, sauce BBQ et basilic.", width: 600, height: 612, halal:isHalal },
     { nom: "FERMIERE", src: "/images/pizza/fermiere.jpg", alt: "Pizza Augusto fermiere", description: "Pâte artisanale, creme faiche, mozzarella, émincés de poulet, champignons, oignons et basilic.", width: 600, height: 612 },
   ];
   const signaturesHover = [
