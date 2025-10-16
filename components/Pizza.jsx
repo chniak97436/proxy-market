@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 export default function Pizza() {
+  const isHalal = "°Halal";
   const pizza = [
     { nom: "MARGHERITA", src: "/images/pizza/Margherita.jpg", alt: "Pizza Augusto Margherita", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella et basilic.", width: 600, height: 612 },
     { nom: "REINE", src: "/images/pizza/Reine.jpg", alt: "Pizza Augusto Reine", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, jambon et basilic.", width: 600, height: 612 },
@@ -13,9 +14,14 @@ export default function Pizza() {
     { nom: "3 FROMAGES", src: "/images/pizza-hover/3-fromages.jpg", alt: "Pizza Augusto 3 Fromages", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, emmental,chêvre et basilic.", width: 600, height: 612 },
   ];
   const signatures = [
-    { nom: "MONTAGNARDE", src: "/images/pizza/montagnarde.jpg", alt: "Pizza Augusto montagnarde", description: "Pâte artisanale, creme faiche, jambon cru, raclette,champignons et basilic.", width: 600, height: 612 },
-    { nom: "ALLLL POLLO", src: "/images/pizza/all-pollo.jpg", alt: "Pizza Augusto all pollo", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, émincés de poulet roti°, oignons rouge, sauce BBQ et basilic.", width: 600, height: 612 },
+    { nom: "MONTAGNARDE", src: "/images/pizza/montargnarde.jpg", alt: "Pizza Augusto montagnarde", description: "Pâte artisanale, creme faiche, jambon cru, raclette,champignons et basilic.", width: 600, height: 612 },
+    { nom: "ALLLL POLLO", src: "/images/pizza/all-pollo.jpg", alt: "Pizza Augusto all pollo", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, émincés de poulet roti°, oignons rouge, sauce BBQ et basilic.", width: 600, height: 612, halal:isHalal },
     { nom: "FERMIERE", src: "/images/pizza/fermiere.jpg", alt: "Pizza Augusto fermiere", description: "Pâte artisanale, creme faiche, mozzarella, émincés de poulet, champignons, oignons et basilic.", width: 600, height: 612 },
+  ];
+  const signaturesHover = [
+    { nom: "MONTAGNARDE", src: "/images/pizza-hover/montagnarde.jpg", alt: "Pizza Augusto montagnarde", description: "Pâte artisanale, creme faiche, jambon cru, raclette,champignons et basilic.", width: 600, height: 612 },
+    { nom: "ALLLL POLLO", src: "/images/pizza-hover/all-pollo.jpg", alt: "Pizza Augusto all pollo", description: "Pâte artisanale, sauce tomate à l'origan, mozzarella, émincés de poulet roti°, oignons rouge, sauce BBQ et basilic.", width: 600, height: 612, },
+    { nom: "FERMIERE", src: "/images/pizza-hover/fermiere.jpg", alt: "Pizza Augusto fermiere", description: "Pâte artisanale, creme faiche, mozzarella, émincés de poulet, champignons, oignons et basilic.", width: 600, height: 612 },
   ];
   return (
     <div className="p-10 bg-black">
@@ -47,7 +53,7 @@ export default function Pizza() {
                 <h3 className="text-lg font-semibold">{item.nom}</h3>
                 <p className="px-2 my-2 text-sm">{item.description}</p>
               </div>
-              <span className="text-xs">°Halal</span>
+              <span className="text-xs">{item.halal}</span>
             </div>
           ))}
         </div>
@@ -61,13 +67,13 @@ export default function Pizza() {
             <div key={index} className="relative border border-[#b0ca0b] overflow-hidden rounded-lg shadow-lg group">
               <div className="ease-out ransition-transform duration-600 will-change-transform group-hover:scale-105">
                 <Image src={item.src} alt={item.alt} width={item.width} height={item.height} className="w-full h-auto transition-opacity duration-500 ease-out rounded-lg shadow-lg group-hover:opacity-0" />
-                <Image src={pizzaHover[index].src} alt={pizzaHover[index].alt} width={pizzaHover[index].width} height={pizzaHover[index].height} className="absolute top-0 left-0 w-full h-auto transition-opacity duration-500 ease-out rounded-lg shadow-lg opacity-0 group-hover:opacity-100" />
+                <Image src={signaturesHover[index].src} alt={signaturesHover[index].alt} width={signaturesHover[index].width} height={signaturesHover[index].height} className="absolute top-0 left-0 w-full h-auto transition-opacity duration-500 ease-out rounded-lg shadow-lg opacity-0 group-hover:opacity-100" />
               </div>
               <div className="mt-4 text-center">
                 <h3 className="text-lg font-semibold">{item.nom}</h3>
                 <p className="px-2 my-2 text-sm">{item.description}</p>
               </div>
-              <span className="text-xs">°Halal</span>
+              <span className="text-xs">{item.halal}</span>
             </div>
           ))}
         </div>
