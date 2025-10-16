@@ -89,6 +89,7 @@ Le site peut être déployé sur **Vercel** (recommandé pour Next.js) ou tout a
 Pour Vercel :
 1. Importez le repository GitHub.
 2. Déployez automatiquement.
+3. URL de déploiement : https://proxy-gqmokyaoe-urbaniaks-projects.vercel.app/
 
 ## Auteur
 

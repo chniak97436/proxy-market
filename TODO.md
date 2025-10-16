@@ -1,2 +1,3 @@
 - [x] Update pizza array in components/Pizza.jsx: set width and height to 600 and 612, fix src for 3-fromages.jpg
 - [x] Update pizzaHover array in components/Pizza.jsx: set width and height to 600 and 612, fix src paths and names
+- [x] Push code to GitHub and deploy on Vercel
