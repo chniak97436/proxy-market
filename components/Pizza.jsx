@@ -80,21 +80,27 @@ export default function Pizza() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center w-screen mt-6 mb-6 md:justify-center ">
-        <div className=" text-white border-t border-b border-r w-[30%] md:w-[30%] borde-white">
-          <p className="flex justify-start  ml-2 text-[50%] font-semibold md:text-lg">PRÉTE EN 2 MIN</p>
-        </div>
-        <div className="items-center text-white border-t border-b w-[60%] md:w-[30%] borde-white">
-          <p className="flex justify-end mr-2  text-[50%] font-semibold md:text-lg">PIZZA ARTISANALES CUITES SUR PLACE</p>
-        </div>
-        <div>
-
-        </div>
-        <div className="absolute flex items-center justify-center w-2 h-2 bg-white rounded-full md:w-6 md:h-6">
-          <span className="text-xs font-bold text-black md:text-lg">&</span>
+      <div>
+        <div className="flex flex-row items-center justify-center w-screen mt-6 md:justify-center ">
+          <div className=" text-white border-t border-b border-r w-[30%] md:w-[30%] borde-white">
+            <p className="flex justify-start  ml-2 text-[50%] font-semibold md:text-lg">PRÉTE EN 2 MIN</p>
+          </div>
+          <div className="items-center text-white border-t border-b w-[60%] md:w-[30%] borde-white">
+            <p className="flex justify-end mr-2  text-[50%] font-semibold md:text-lg">PIZZA ARTISANALES CUITES SUR PLACE</p>
+          </div>
         </div>
         <div>
-
+          <div className="relative flex flex-row items-center justify-center mb-6 md:justify-center ">
+            <div className="items-center text-white  border-r border-b w-[60%] md:w-[30%] borde-white">
+              <p className="flex justify-start ml-2  text-[53%] font-semibold md:text-lg">CROUSTILLANTES</p>
+            </div>
+            <div className="absolute flex items-center justify-center w-2 h-2 bg-white rounded-full left-[64%] m md:w-6 md:h-6">
+              <span className="text-xs font-bold text-black md:text-lg">&</span>
+            </div>
+            <div className=" text-white  border-b  w-[30%] md:w-[30%] borde-white">
+              <p className="flex justify-end  mr-2 text-[53%] font-semibold md:text-lg">SAVOUREUSES</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
