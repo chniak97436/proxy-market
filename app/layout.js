@@ -31,11 +31,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning={true}>
       <body
-        className={`${ds.variable} ${roboto.variable} antialiased `}
+        className={`${ds.variable} ${roboto.variable} antialiased w-screen bg-black`}
       >
         <MenuProvider>
           <NavBar />
-          <main className="duration-300 transition-filter">{children}</main>
+          <main className="w-screen duration-300 bg-black transition-filter">{children}</main>
           <Footer />
         </MenuProvider>
       </body>
