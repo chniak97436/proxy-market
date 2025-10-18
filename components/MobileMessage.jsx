@@ -28,9 +28,9 @@ export default function MobileMessage() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-      <div className="max-w-sm p-6 mx-4 text-center bg-white rounded-lg shadow-lg">
-        <h2 className="mb-4 text-xl font-bold text-black">Veuillez consulter sur mobile</h2>
-        <p className="text-gray-700">
+      <div className="max-w-sm p-6 mx-4 text-center rounded-lg shadow-lg bviolet">
+        <h2 className="mb-4 text-xl font-bold tvert">Veuillez consulter sur mobile</h2>
+        <p className="tvert">
           Ce site est optimisé pour les appareils mobiles. Pour une meilleure expérience, veuillez utiliser un téléphone ou une tablette.
         </p>
       </div>
