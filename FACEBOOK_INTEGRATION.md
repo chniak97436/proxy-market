@@ -47,63 +47,15 @@ npm install axios
 
 ### Afficher les Posts d'une Page
 
-Créez un composant `FacebookPosts.jsx` :
+Le composant `FacebookPosts.jsx` est actuellement un placeholder et doit être implémenté selon le guide ci-dessous :
 
 ```jsx
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 
 const FacebookPosts = () => {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get(
-          `https://graph.facebook.com/v18.0/${process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID}/posts`,
-          {
-            params: {
-              access_token: process.env.FACEBOOK_ACCESS_TOKEN,
-              fields: 'id,message,created_time,full_picture,permalink_url,likes.summary(true),comments.summary(true)',
-              limit: 10
-            }
-          }
-        );
-        setPosts(response.data.data);
-      } catch (err) {
-        setError('Erreur lors du chargement des posts');
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPosts();
-  }, []);
-
-  if (loading) return <div>Chargement...</div>;
-  if (error) return <div>{error}</div>;
-
   return (
-    <div className="facebook-posts">
-      {posts.map(post => (
-        <div key={post.id} className="post-card">
-          {post.full_picture && (
-            <img src={post.full_picture} alt="Post image" />
-          )}
-          <p>{post.message}</p>
-          <div className="post-meta">
-            <span>{new Date(post.created_time).toLocaleDateString('fr-FR')}</span>
-            <span>{post.likes?.summary?.total_count || 0} likes</span>
-            <span>{post.comments?.summary?.total_count || 0} commentaires</span>
-          </div>
-          <a href={post.permalink_url} target="_blank" rel="noopener noreferrer">
-            Voir sur Facebook
-          </a>
-        </div>
-      ))}
+    <div>
+      {/* Code pour afficher les posts Facebook */}
     </div>
   );
 };
@@ -183,24 +135,10 @@ export default function SocialPage() {
 
 ```js
 import { NextResponse } from 'next/server';
-import axios from 'axios';
 
 export async function GET() {
-  try {
-    const response = await axios.get(
-      `https://graph.facebook.com/v18.0/${process.env.FACEBOOK_PAGE_ID}/posts`,
-      {
-        params: {
-          access_token: process.env.FACEBOOK_ACCESS_TOKEN,
-          fields: 'id,message,created_time,full_picture',
-          limit: 5
-        }
-      }
-    );
-    return NextResponse.json(response.data);
-  } catch (error) {
-    return NextResponse.json({ error: 'Erreur API' }, { status: 500 });
-  }
+  // Code pour récupérer les posts Facebook
+  return NextResponse.json({ message: 'API route pour les posts Facebook' });
 }
 ```
 
@@ -212,6 +150,8 @@ useEffect(() => {
     .then(data => setPosts(data.data));
 }, []);
 ```
+
+**Note :** Le composant `FacebookPosts.jsx` et l'API route `app/api/facebook/posts/route.js` sont actuellement des placeholders et doivent être implémentés selon les exemples ci-dessus.
 
 ### 2. Gestion des Erreurs
 - Gérez les erreurs d'API (token expiré, permissions insuffisantes).

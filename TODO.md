@@ -1,3 +1,3 @@
-- [x] Update pizza array in components/Pizza.jsx: set width and height to 600 and 612, fix src for 3-fromages.jpg
-- [x] Update pizzaHover array in components/Pizza.jsx: set width and height to 600 and 612, fix src paths and names
-- [x] Push code to GitHub and deploy on Vercel
+# TODO: Configure .env.local for Facebook API
+
+- [x] Create .env.local file with Facebook credentials (app ID, secret, token) using standard variable names for API access

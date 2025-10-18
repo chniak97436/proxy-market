@@ -6,7 +6,7 @@ import { MenuContext } from "./MenuContext";
 
 export default function NavBar() {
   const navItems = [
-    { name: "À propos", href: "/about" },
+    { name: "Nos pizza", href: "/pizza" },
     { name: "Social", href: "/social" },
     { name: "Contact", href: "/contact" },
   ];
@@ -48,7 +48,7 @@ export default function NavBar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="pr-2 text-lg font-semibold transition-colors duration-300  md:text-lg lg:text-xl hover:text-white font-roboto whitespace-nowrap"
+                className="pr-2 text-lg font-semibold transition-colors duration-300 md:text-lg lg:text-xl hover:text-white font-roboto whitespace-nowrap"
               >
                 {item.name}
               </Link>

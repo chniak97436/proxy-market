@@ -1,9 +1,7 @@
 @import "tailwindcss";
 /* Reset css */
 *,::after,::before {
-  box-sizing: border-box;
-  
-  
+  box-sizing: border-box; 
   text-decoration: none;
 }
 
@@ -25,7 +23,7 @@
 }
 
 .blur-background main, .blur-background footer {
-  filter: blur(4px);
+  filter: blur(5px);
   transition: filter 0.4s ease ease-in-out;
 }
 
