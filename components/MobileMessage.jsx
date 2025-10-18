@@ -14,13 +14,10 @@ export default function MobileMessage() {
       }
     };
 
-    // Check on mount
     checkScreenWidth();
 
-    // Add event listener for window resize
     window.addEventListener('resize', checkScreenWidth);
 
-    // Cleanup
     return () => window.removeEventListener('resize', checkScreenWidth);
   }, []);
 
