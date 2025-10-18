@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { MenuProvider } from "../components/MenuContext";
+import MobileMessage from "../components/MobileMessage";
 
 const ds = Dancing_Script({
   variable: "--font-dancing-script",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${ds.variable} ${roboto.variable} antialiased w-screen bg-black`}
       >
+        <MobileMessage />
         <MenuProvider>
           <NavBar />
           <main className="w-screen duration-300 bg-black transition-filter">{children}</main>
