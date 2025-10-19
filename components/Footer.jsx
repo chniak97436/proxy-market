@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PhoneIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
 
 
@@ -34,11 +35,18 @@ export default function Footer() {
 
           <div>
             <h4 className="mb-1 font-semibold">Contact</h4>
-            <p className="text-sm text-muted-foreground">
-              715 A Chemin Dubuisson, Saint-Leu, La Réunion</p>
-            <p>
-              Téléphone: 02 63 00 99 83
-            </p>
+            <div className="flex items-center space-x-2">
+              <a href="tel:0263009983" className="flex items-center space-x-1 text-sm text-muted-foreground hover:text-white">
+                <PhoneIcon className="w-4 h-4" />
+                <span>02 63 00 99 83</span>
+              </a>
+            </div>
+            <div className="flex items-center mt-1 space-x-2">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=715+A+Chemin+Dubuisson,+Saint-Leu,+La+Réunion" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-sm text-muted-foreground hover:text-white">
+                <MapPinIcon className="w-4 h-4" />
+                <span>715 A Chemin Dubuisson, Saint-Leu, La Réunion</span>
+              </a>
+            </div>
           </div>
         </div>
         <div className="pt-4 mt-4 text-sm text-center border-t border-t-[#b0ca0b] text-muted-foreground">
