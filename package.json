@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack -p3500",
+    "dev": "next dev --turbopack -p3400",
     "build": "next build --turbopack",
     "start": "next start -p3001",
     "lint": "eslint"
@@ -15,6 +15,7 @@
     "axios": "^1.12.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
     "lucide-react": "^0.545.0",
     "next": "15.5.4",
     "pdfkit": "^0.17.2",

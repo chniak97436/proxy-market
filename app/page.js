@@ -5,7 +5,7 @@ export default function Home() {
     <div className="w-full">
       <Image
         src="/images/vitrine.jpg"
-        alt="proxi market étang st Leu 97436"
+        alt="Proxi étang st Leu 97436"
         className="w-full h-[80vh] object-cover"
         width={1920}
         height={1080}

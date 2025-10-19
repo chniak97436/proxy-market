@@ -32,7 +32,7 @@ export default function NavBar() {
           <Link href="/" className="flex items-center justify-start">
             <Image
               src="/images/logo/Logo-proxi.png"
-              alt="proxi market étang st Leu 97436"
+              alt="Logo Proxi étang st Leu 97436"
               width={80}
               height={60}
               className="object-contain"
