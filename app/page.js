@@ -48,6 +48,19 @@ export default function Home() {
           <p className="mt-4 font-semibold text-center text-white text-md">Venez jouer vos paris hippiques dans votre Proxi Etang Saint Leu</p>
         </div>
       </div>
+      <div className="flex justify-center mb-6 flex-row w-[100%] md:flex-col md:text-center">
+        <div className="w-[100%] p-2  m-0 shadow-lg  bviolet border border-[#b0ca0b]">
+          <Image src="/images/logo/phenix-svg.png" alt="application Phenix proxi étang st-leu 97436"
+            className="rounded-lg"
+            width={1920}
+            height={1080}
+            priority />
+          <p className="mt-4 font-semibold text-center text-white text-md">En fin de journée, lorsqu’il nous reste des viennoiseries invendues du jour, nous les proposerons sous forme de panier à shopper sur l’<span className="text-lg font-semibold uppercase">application Phenix</span> ! A prix réduit dans une démarche anti gaspille . N’hésitez pas à télécharger l’application !
+            N’hésitez pas à nous ajouter en commerçant favoris pour ne pas rater les offres !
+          </p>
+        </div>
+        
+      </div>
     </div>
   );
 }
