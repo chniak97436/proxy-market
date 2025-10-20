@@ -6,7 +6,7 @@ export default function Caroussel() {
 
     const images = [
         { src: "/images/glace.jpg", alt: "image", width: 1920, height: 1080 },
-        { src: "/images/glace-rounded.jpg", alt: "image", width: 1920, height: 1080 },
+        { src: "/images/glace-rouded.jpg", alt: "image", width: 1920, height: 1080 },
         { src: "/images/pain-bouchon.jpg", alt: "image", width: 1920, height: 1080 },
         { src: "/images/piment.jpg", alt: "image", width: 1920, height: 1080 },
         { src: "/images/barattolino.jpg", alt: "image", width: 1920, height: 1080 },

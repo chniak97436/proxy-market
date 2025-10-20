@@ -14,6 +14,8 @@ const eslintConfig = [
   {
     rules: {
       "react/no-unescaped-entities": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@next/next/no-assign-module-variable": "off",
     },
     ignores: [
       "node_modules/**",
@@ -21,6 +23,8 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
+      ".next/build/**",
+      ".next/server/**",
     ],
   },
 ];
