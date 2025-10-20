@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Pizza from "@/components/Pizza";
+import Caroussel from "@/components/Caroussel";
 export default function Home() {
   return (
     <div className="w-full">
@@ -71,8 +71,8 @@ export default function Home() {
             N’hésitez pas à nous ajouter en commerçant favoris pour ne pas rater les offres !
           </p>
         </div>
-
       </div>
+      <Caroussel/>
     </div>
   );
 }
