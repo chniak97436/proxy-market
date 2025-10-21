@@ -1,5 +1,88 @@
 import Image from "next/image";
 import Caroussel from "@/components/Caroussel";
+
+export const metadata = {
+  title: 'Proxi Étang Saint-Leu - Commerce de Proximité, Pizzas Augusto, PMU, Tabacs | Étang Saint-Leu 97436',
+  description: 'Découvrez Proxi Étang Saint-Leu : pizzas artisanales Augusto prêtes en 2 minutes, PMU, tabacs, gaz, glaces italiennes, pains bouchons et produits frais locaux. Commerce de proximité à Étang Saint-Leu 97436.',
+  keywords: [
+    'Proxi Étang Saint-Leu',
+    'commerce proximité',
+    'pizzas Augusto',
+    'pizza artisanale',
+    'PMU Étang Saint-Leu',
+    'tabacs',
+    'gaz',
+    'glaces italiennes',
+    'pains bouchons',
+    'produits frais',
+    'Étang Saint-Leu 97436',
+    'pizza livraison',
+    'point chaud',
+    'application Phenix',
+    'anti gaspillage',
+    'viennoiseries'
+  ],
+  authors: [{ name: 'Proxi Étang Saint-Leu' }],
+  creator: 'Proxi Étang Saint-Leu',
+  publisher: 'Proxi Étang Saint-Leu',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://proxi-etang-saint-leu.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Proxi Étang Saint-Leu - Pizzas Augusto, PMU, Commerce de Proximité',
+    description: 'Pizzas artisanales Augusto prêtes en 2 minutes, PMU, tabacs, gaz et produits frais à Étang Saint-Leu 97436. Découvrez notre équipe et nos services.',
+    url: 'https://proxi-etang-saint-leu.com',
+    siteName: 'Proxi Étang Saint-Leu',
+    images: [
+      {
+        url: '/images/vitrine.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Vitrine Proxi Étang Saint-Leu',
+      },
+      {
+        url: '/images/pizza-page.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Pizzas Augusto Proxi Étang Saint-Leu',
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Proxi Étang Saint-Leu - Pizzas Augusto, PMU',
+    description: 'Pizzas artisanales Augusto, PMU, tabacs et produits frais à Étang Saint-Leu 97436.',
+    images: ['/images/vitrine.jpg'],
+    creator: '@ProxiEtangStLeu',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-site-verification-code',
+    yandex: 'your-yandex-verification-code',
+    yahoo: 'your-yahoo-verification-code',
+  },
+};
+
 export default function Home() {
   return (
     <div className="w-full">

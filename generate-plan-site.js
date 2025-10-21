@@ -21,6 +21,11 @@ doc.text('   - URL : /social');
 doc.text('   - Description : Page dédiée aux contenus sociaux.');
 doc.moveDown();
 
+doc.text('3. Pizza');
+doc.text('   - URL : /pizza');
+doc.text('   - Description : Page présentant les pizzas disponibles.');
+doc.moveDown();
+
 doc.text('Note : Ce plan peut être mis à jour en fonction des évolutions du site.');
 
 doc.end();
