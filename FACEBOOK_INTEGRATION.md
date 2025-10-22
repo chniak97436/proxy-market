@@ -33,9 +33,10 @@ Ce guide détaille comment intégrer l'API Facebook Graph pour afficher les post
 ### 1. Variables d'Environnement
 Ajoutez dans un fichier `.env.local` (ne pas commiter) :
 ```
-NEXT_PUBLIC_FACEBOOK_APP_ID=votre_app_id
-FACEBOOK_ACCESS_TOKEN=votre_access_token
-FACEBOOK_PAGE_ID=votre_page_id
+FACEBOOK_ACCESS_TOKEN=KLyhBQNXILMEco0u_WV7hFS7PVc
+FACEBOOK_PAGE_ID=61576088153701
+NEXT_PUBLIC_FACEBOOK_APP_ID=1509428040246246
+
 ```
 
 ### 2. Installation des Dépendances

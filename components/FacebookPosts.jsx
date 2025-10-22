@@ -1,70 +1,46 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const FacebookPosts = () => {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
   useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await fetch('/api/facebook/posts');
-        if (!response.ok) {
-          throw new Error('Failed to fetch posts');
-        }
-        const data = await response.json();
-        setPosts(data.data || []);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
+    // Load Facebook SDK if not already loaded
+    if (window.FB) {
+      window.FB.XFBML.parse();
+      return;
+    }
 
-    fetchPosts();
+    const script = document.createElement('script');
+    script.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0';
+    script.async = true;
+    script.defer = true;
+    script.crossOrigin = 'anonymous';
+    document.body.appendChild(script);
+
+    // Initialize Facebook SDK
+    window.fbAsyncInit = function() {
+      window.FB.init({
+        appId: process.env.NEXT_PUBLIC_FACEBOOK_APP_ID || '',
+        xfbml: true,
+        version: 'v18.0'
+      });
+
+      // Parse XFBML after SDK loads
+      window.FB.XFBML.parse();
+    };
   }, []);
 
-  if (loading) return <div>Loading posts...</div>;
-  if (error) return <div>Error: {error}</div>;
-
   return (
-    <div className="facebook-posts">
-      {posts.length === 0 ? (
-        <p>No posts available.</p>
-      ) : (
-        posts.map((post) => (
-          <div key={post.id} className="p-4 mb-4 border rounded post">
-            {post.message && <p className="mb-2">{post.message}</p>}
-            {post.attachments && post.attachments.data && post.attachments.data.length > 0 && (
-              <div className="attachments">
-                {post.attachments.data.map((attachment, index) => (
-                  <div key={index} className="mb-2 attachment">
-                    {attachment.media && attachment.media.image && (
-                      <img
-                        src={attachment.media.image.src}
-                        alt={attachment.title || 'Attachment'}
-                        className="h-auto max-w-full"
-                      />
-                    )}
-                    {attachment.title && <h4>{attachment.title}</h4>}
-                    {attachment.description && <p>{attachment.description}</p>}
-                    {attachment.url && (
-                      <a href={attachment.url} target="_blank" rel="noopener noreferrer">
-                        View on Facebook
-                      </a>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )}
-            <small className="text-gray-500">
-              {new Date(post.created_time).toLocaleDateString('fr-FR')}
-            </small>
-          </div>
-        ))
-      )}
+    <div className="w-full max-w-md mx-auto facebook-posts sm:max-w-lg md:max-w-xl lg:max-w-2xl">
+      <iframe
+        src={`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61576088153701&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=${process.env.NEXT_PUBLIC_FACEBOOK_APP_ID || ''}`}
+        className="w-full h-96 sm:h-[500px] md:h-[600px] border-none overflow-hidden"
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen={true}
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        title="Facebook Page Plugin"
+      ></iframe>
     </div>
   );
 };

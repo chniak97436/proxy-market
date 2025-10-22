@@ -91,14 +91,14 @@ export default function Pizza() {
         </div>
         <div>
           <div className="relative flex flex-row items-center justify-center mb-6 md:justify-center ">
-            <div className="items-center text-white  border-r border-b w-[60%] md:w-[30%] borde-white">
+            <div className="flex items-center text-white h-5 border-r border-b w-[60%] md:w-[30%] borde-white">
               <p className="flex justify-start ml-2  text-[53%] font-semibold md:text-lg">CROUSTILLANTES</p>
             </div>
-            <div className="absolute flex items-center justify-center w-2 h-2 bg-white rounded-full left-[64%] m md:w-6 md:h-6">
-              <span className="text-xs font-bold text-black md:text-lg">&</span>
+            <div className="absolute flex items-center justify-center p-1.5 w-2.5 h-2.5 bg-white rounded-full left-[63.5%]  md:w-6 md:h-6">
+              <span className="text-[50%] black md:text-lg">&</span>
             </div>
-            <div className=" text-white  border-b  w-[30%] md:w-[30%] borde-white">
-              <p className="flex justify-end  mr-2 text-[53%] font-semibold md:text-lg">SAVOUREUSES</p>
+            <div className="flex items-center justify-end text-white h-5 border-b  w-[30%] md:w-[30%] borde-white">
+              <p className="text-right   mr-2 text-[53%] font-semibold md:text-lg">SAVOUREUSES</p>
             </div>
           </div>
         </div>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://proxi-etang-saint-leu.com/sitemap.xml
