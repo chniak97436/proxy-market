@@ -27,6 +27,25 @@
   transition: filter 0.4s ease ease-in-out;
 }
 
+/* Styles pour le plugin Facebook */
+.facebook-posts iframe {
+  width: 100% !important;
+  max-width: 500px !important;
+  height: 600px !important;
+}
+
+@media (max-width: 640px) {
+  .facebook-posts iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+._10b4{
+  width: 100%!important;
+  display: flex!important;
+  flex-direction: column!important;
+}
 
 
 

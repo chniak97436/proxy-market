@@ -120,8 +120,9 @@ export default function Home() {
           <p className="font-semibold text-white text-md">Venez découvrir ces délicieuses pizza Augusto, artisanales, PRÊTES EN SEULEMENT 2 MINUTES AU FOUR !
             </p>
         </div>
-        <div className="w-[100%] p-2 my-auto m-0 shadow-lg bg-white border-t border-r border-b border-[#b0ca0b]">
+        <div className="w-[100%] p-2  m-0 shadow-lg bg-white border-t border-r border-b border-[#b0ca0b]">
           <Image src="/images/pizza-page.jpg" alt="Pizza Augusto proxi étang st-leu 97436"
+          className="mt-[8%]"
             width={1920}
             height={1080}
             priority />
