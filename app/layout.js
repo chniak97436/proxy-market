@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { MenuProvider } from "../components/MenuContext";
 import MobileMessage from "../components/MobileMessage";
+import Script from "next/script";
 
 const ds = Dancing_Script({
   variable: "--font-dancing-script",
@@ -31,6 +32,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning={true}>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+      </Script>
       <body
         className={`${ds.variable} ${roboto.variable} antialiased w-screen bg-black`}
       >

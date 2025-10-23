@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
 Sitemap: https://proxi-etang-saint-leu.com/sitemap.xml
