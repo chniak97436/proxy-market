@@ -103,14 +103,13 @@ export default function Home() {
       </div>
       <div className="flex justify-center mb-6 flex-row w-[100%] md:flex-col md:text-center">
         <div className="w-[100%] p-2  m-0 shadow-lg bg-white border-t border-r border-b border-[#b0ca0b]">
-          <Image src="/images/equipe.jpg" alt="personel proxi étang st-leu 97436 width={1920}
-        height={1080}
-        priority "width={1920}
+          <Image src="/images/equipe.jpg" alt="personel proxi étang st-leu 97436"
+            width={1920}
             height={1080}
             priority />
         </div>
         <div className="w-[100%] p-2  m-0 shadow-lg   bviolet border border-[#b0ca0b]">
-          <p className="text-white text-md">Notre équipe sera ravis de vous accueillir dans votre commerce Proxi Étang St-Leu.</p>
+          <p className="text-white text-md">Nous serons ravis de vous accueillir dans votre commerce Proxi Étang St-Leu.</p>
         </div>
       </div>
       <div className="flex justify-center mt-6 mb-6 flex-row w-[100%] md:flex-col md:text-center">
@@ -120,7 +119,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center mb-6 flex-row w-[100%] md:flex-col md:text-center">
         <div className="w-[100%] p-2  m-0 shadow-lg   bviolet border border-[#b0ca0b]">
-          <p className="text-white text-md">Venez découvrir ces délicieuses pizza Augusto, artisanales, PRÊTES EN SEULEMENT 2 MINUTES AU FOUR !
+          <p className="text-white text-md">Venez découvrir ces délicieuses pizza Augusto, artisanales, prête en 2 MINUTES AU FOUR !
             </p>
         </div>
         <div className="w-[100%] p-2  m-0 shadow-lg bg-white border-t border-r border-b border-[#b0ca0b]">
