@@ -110,8 +110,7 @@ export default function Home() {
             priority />
         </div>
         <div className="w-[100%] p-2  m-0 shadow-lg   bviolet border border-[#b0ca0b]">
-          <h2 className="items-center font-semibold text-white text-md ">Notre Équipe :</h2>
-          <p className="font-semibold text-white text-md">Notre équipe sera ravis de vous accueillir dans votre commerce Proxi Étang St-Leu.</p>
+          <p className="text-white text-md">Notre équipe sera ravis de vous accueillir dans votre commerce Proxi Étang St-Leu.</p>
         </div>
       </div>
       <div className="flex justify-center mt-6 mb-6 flex-row w-[100%] md:flex-col md:text-center">
@@ -121,7 +120,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center mb-6 flex-row w-[100%] md:flex-col md:text-center">
         <div className="w-[100%] p-2  m-0 shadow-lg   bviolet border border-[#b0ca0b]">
-          <p className="font-semibold text-white text-md">Venez découvrir ces délicieuses pizza Augusto, artisanales, PRÊTES EN SEULEMENT 2 MINUTES AU FOUR !
+          <p className="text-white text-md">Venez découvrir ces délicieuses pizza Augusto, artisanales, PRÊTES EN SEULEMENT 2 MINUTES AU FOUR !
             </p>
         </div>
         <div className="w-[100%] p-2  m-0 shadow-lg bg-white border-t border-r border-b border-[#b0ca0b]">
@@ -145,7 +144,7 @@ export default function Home() {
             width={1920}
             height={1080}
             priority />
-          <p className="mt-4 font-semibold text-center text-white text-md">Venez jouer vos paris hippiques dans votre Proxi Etang Saint Leu</p>
+          <p className="mt-4 text-center text-white text-md">Venez jouer vos paris hippiques dans votre Proxi Etang Saint Leu</p>
         </div>
       </div>
       <div className="flex justify-center mb-6 flex-row w-[100%] md:flex-col md:text-center">
@@ -155,7 +154,7 @@ export default function Home() {
             width={1020}
             height={680}
             priority />
-          <p className="mt-4 font-semibold text-center text-white text-md">En fin de journée, lorsqu’il nous reste des viennoiseries invendues du jour, nous les proposerons sous forme de panier à shopper sur l’<span className="text-lg font-semibold uppercase">application Phenix</span> ! A prix réduit dans une démarche anti gaspille . N’hésitez pas à télécharger l’application !
+          <p className="mt-4 text-center text-white text-md">En fin de journée, lorsqu’il nous reste des viennoiseries invendues du jour, nous les proposerons sous forme de panier à shopper sur l’<span className="text-lg font-semibold uppercase">application Phenix</span> ! A prix réduit dans une démarche anti gaspille . N’hésitez pas à télécharger l’application !
             N’hésitez pas à nous ajouter en commerçant favoris pour ne pas rater les offres !
           </p>
         </div>
