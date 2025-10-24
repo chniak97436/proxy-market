@@ -39,7 +39,7 @@ export default function NavBar() {
             />
           </Link>
           <div className="flex justify-center">
-            <h1 className="text-xl font-bold text-center text-white md:text-2xl lg:text-3xl font-ds">
+            <h1 className="font-bold text-center text-white text-md font-ds">
               Étang Saint-Leu
             </h1>
           </div>

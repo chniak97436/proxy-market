@@ -110,7 +110,7 @@ export default function Home() {
             priority />
         </div>
         <div className="w-[100%] p-2  m-0 shadow-lg   bviolet border border-[#b0ca0b]">
-          <h2 className="items-center text-lg font-semibold text-white md:text-2xl lg:text-3xl">Notre Équipe :</h2>
+          <h2 className="items-center font-semibold text-white text-md ">Notre Équipe :</h2>
           <p className="font-semibold text-white text-md">Notre équipe sera ravis de vous accueillir dans votre commerce Proxi Étang St-Leu.</p>
         </div>
       </div>
