@@ -3,11 +3,12 @@
 *,::after,::before {
   box-sizing: border-box; 
   text-decoration: none;
+  
 }
 
 /* Classes CSS personnalisées - à remplir avec les codes couleur */
 .tvert {
-  color: #b0ca0b; /* Couleur texte vert - à remplacer */
+  color: #AABF06; /* Couleur texte vert - à remplacer */
 }
 
 .tviolet {
@@ -15,15 +16,15 @@
 }
 
 .bvert {
-  background-color: #b0ca0b; /* Couleur fond vert - à remplacer */
+  background-color: #AABF06; /* Couleur fond vert - à remplacer */
 }
 
 .bviolet {
-  background-color: #801c54; /* Couleur fond violet - à remplacer */
+  background-color: #8C1b54; /* Couleur fond violet - à remplacer */
 }
 
 .blur-background main, .blur-background footer {
-  filter: blur(5px);
+  filter: blur(7px);
   transition: filter 0.4s ease ease-in-out;
 }
 
@@ -45,6 +46,36 @@
   width: 100%!important;
   display: flex!important;
   flex-direction: column!important;
+}
+
+/* Force portrait orientation on mobile */
+@media screen and (max-width: 849px) and (orientation: landscape) {
+  body {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+    width: 100vh;
+    height: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .orientation-message {
+    display: block !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    max-width: 300px;
+  }
 }
 
 

@@ -98,6 +98,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${ds.variable} ${roboto.variable} antialiased w-screen bg-black`}
       >
+        <div className="hidden orientation-message">
+          <h2 className="mb-4 text-xl font-bold text-white">Veuillez tourner votre appareil</h2>
+          <p className="text-white">
+            Ce site est optimisé pour le mode portrait sur mobile. Veuillez tourner votre appareil en mode portrait pour continuer.
+          </p>
+        </div>
         <MobileMessage />
         <MenuProvider>
           <NavBar />

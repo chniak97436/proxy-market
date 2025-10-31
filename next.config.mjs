@@ -14,7 +14,6 @@ const nextConfig = {
       },
     ],
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://ubkdev.com' : '',
 };
 
 export default nextConfig;
