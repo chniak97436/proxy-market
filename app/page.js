@@ -34,14 +34,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://proxi-etang-saint-leu.com'),
+  metadataBase: new URL('https://www.ubkdev.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Proxi Étang Saint-Leu - Pizzas Augusto, PMU, Commerce de Proximité',
     description: 'Pizzas artisanales Augusto prêtes en 2 minutes, PMU, tabacs, gaz et produits frais à Étang Saint-Leu 97436. Découvrez notre équipe et nos services.',
-    url: 'https://proxi-etang-saint-leu.com',
+    url: 'https://www.ubkdev.com',
     siteName: 'Proxi Étang Saint-Leu',
     images: [
       {

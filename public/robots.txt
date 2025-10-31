@@ -10,4 +10,4 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-Sitemap: https://proxi-etang-saint-leu.com/sitemap.xml
+Sitemap: https://ubkdev.com/sitemap.xml

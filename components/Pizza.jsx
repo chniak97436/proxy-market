@@ -26,7 +26,7 @@ export default function Pizza() {
   return (
     <div className="w-screen bg-black">
       <div className="w-full mx-auto bg-black">
-        <Image width="208" height="104" className="pt-8 mx-auto" src="https://augusto-pizza.fr/wp-content/themes/augustoTheme/img/logo-augusto-white.svg" alt="Logo pizza Augusto" />
+<Image width="208" height="104" className="pt-8 mx-auto" src="https://augusto-pizza.fr/wp-content/themes/augustoTheme/img/logo-augusto-white.svg" alt="Logo pizza Augusto" />
         <div className="w-full mx-auto mb-6 text-center">
           <p className="text-sm text-white">BIEN PLUS QU'UNE PIZZA</p>
           <div className="flex flex-row justify-center w-full mx-auto mt-2 ">

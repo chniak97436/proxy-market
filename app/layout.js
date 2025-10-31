@@ -27,6 +27,57 @@ export const metadata = {
       { url: '/images/logo/Logo-proxi.png', sizes: '16x16', type: 'image/png' },
     ],
   },
+  metadataBase: new URL('https://ubkdev.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Proxi Étang Saint-Leu - Pizzas Augusto, PMU, Commerce de Proximité',
+    description: 'Pizzas artisanales Augusto prêtes en 2 minutes, PMU, tabacs, gaz et produits frais à Étang Saint-Leu 97436. Découvrez notre équipe et nos services.',
+    url: 'https://ubkdev.com',
+    siteName: 'Proxi Étang Saint-Leu',
+    images: [
+      {
+        url: '/images/vitrine.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Vitrine Proxi Étang Saint-Leu',
+      },
+      {
+        url: '/images/pizza-page.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Pizzas Augusto Proxi Étang Saint-Leu',
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Proxi Étang Saint-Leu - Pizzas Augusto, PMU',
+    description: 'Pizzas artisanales Augusto, PMU, tabacs et produits frais à Étang Saint-Leu 97436.',
+    images: ['/images/vitrine.jpg'],
+    creator: '@ProxiEtangStLeu',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-site-verification-code',
+    yandex: 'your-yandex-verification-code',
+    yahoo: 'your-yahoo-verification-code',
+  },
 };
 
 export default function RootLayout({ children }) {
