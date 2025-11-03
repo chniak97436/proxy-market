@@ -8,19 +8,19 @@
 
 /* Classes CSS personnalisées - à remplir avec les codes couleur */
 .tvert {
-  color: #AABF06; /* Couleur texte vert - à remplacer */
+  color: #b0cb03; /* Couleur texte vert - à remplacer */
 }
 
 .tviolet {
-  color: #801c54; /* Couleur texte violet - à remplacer */
+  color: #801553;; /* Couleur texte violet - à remplacer */
 }
 
 .bvert {
-  background-color: #AABF06; /* Couleur fond vert - à remplacer */
+  background-color: #b0cb03; /* Couleur fond vert - à remplacer */
 }
 
 .bviolet {
-  background-color: #8C1b54; /* Couleur fond violet - à remplacer */
+  background-color: #801553;; /* Couleur fond violet - à remplacer */
 }
 
 .blur-background main, .blur-background footer {

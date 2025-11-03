@@ -27,20 +27,20 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full border-b shadow-md bviolet tvert">
-      <div className="w-full px-4 mx-auto">
+      <div className="w-full px-2 mx-auto">
         <div className="grid items-center h-20 grid-cols-3">
           <Link href="/" className="flex items-center justify-start">
             <Image
               src="/images/logo/Logo-proxi.png"
-              alt="Logo Proxi étang st Leu 97436"
+              alt="Logo Proxi étang st-Leu 97436"
               width={80}
               height={60}
               className="object-contain"
             />
           </Link>
           <div className="flex justify-center">
-            <h1 className="font-bold text-center text-white text-md font-ds">
-              Étang Saint-Leu
+            <h1 className="text-xl font-bold text-center text-white font-ds">
+              Étang<br/>Saint-Leu
             </h1>
           </div>
           <div className="items-center justify-end hidden space-x-4 md:flex">

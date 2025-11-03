@@ -7,7 +7,7 @@ export default function MobileMessage() {
 
   useEffect(() => {
     const checkScreenWidth = () => {
-      if (window.innerWidth >= 850) {
+      if (window.innerWidth >= 750) {
         setShowMessage(true);
       } else {
         setShowMessage(false);
