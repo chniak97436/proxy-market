@@ -6,7 +6,7 @@ import { PhoneIcon, MapPinIcon, FacebookIcon } from "@heroicons/react/24/outline
 export default function Footer() {
   return (
     <footer className="text-white bg-[radial-gradient(circle_at_bottom,_#801c54_0%,_#801c54_90%,_#b0ca0b_100%)] border-t border-t-[#b0ca0b]">
-      <div className="container px-5 py-2 mx-auto">
+      <div className="container px-2 py-2 mx-auto">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <div className="flex flex-row items-center justify-between ">
 
