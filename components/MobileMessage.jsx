@@ -24,10 +24,10 @@ export default function MobileMessage() {
   if (!showMessage) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-      <div className="max-w-sm p-6 mx-4 text-center rounded-lg shadow-lg bviolet">
-        <h2 className="mb-4 text-xl font-bold tvert">Veuillez consulter sur mobile</h2>
-        <p className="tvert">
+    <div className="fixed inset-0 z-50 flex items-center justify-center mx-4 mb-4 bg-black bg-opacity-75 rounded-lg">
+      <div className="max-w-sm p-6 mx-8 text-center rounded-lg shadow-lg bviolet">
+        <h2 className="mb-8 text-xl font-bold tvert">Veuillez consulter sur mobile</h2>
+        <p className="mb-4 tvert">
           Ce site est optimisé pour les appareils mobiles. Pour une meilleure expérience, veuillez utiliser un téléphone ou une tablette.
         </p>
       </div>
